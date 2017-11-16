@@ -51,8 +51,9 @@ function finish(name) {
 function check(waittingList) {
   if (waittingList.length == 0) {
     $("#Waitting_list").append("<p>Great work! You've done all your jobs!</P>");
+    return [];
   } else {
-    showWL(waittingList);
+    return waittingList;
   }
 }
 //move one to the top
@@ -81,7 +82,7 @@ function moveToTop(name){
 // call functions//////////////////////////////////
 //call show waitting list
 
-check(waittingList);
+showWL(check(waittingList));
 
 
 //call show treated list

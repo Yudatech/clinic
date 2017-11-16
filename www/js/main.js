@@ -17,6 +17,7 @@ function showWL(waittingList) {
     <li class="list-group-item">${name}</li>
     </ul>
     `);
+    select();
   }
 }
 // show treated list
@@ -81,7 +82,7 @@ function moveToTop(name){
 //call show waitting list
 
 check(waittingList);
-select();
+
 
 //call show treated list
 if (treatedList.length > 0) {
@@ -105,7 +106,7 @@ $("#have_done").on("click", function () {
     let finishName = waittingList[0];
     showDone(toDone(finishName));
     showWL(finish(finishName));
-    select();
+
   }
 });
 
@@ -115,7 +116,7 @@ $("#add").on("click", function () {
     let add = $("#lists").val();
     showWL(addNew(add));
     $("#lists").val("");
-    select();
+    
   }
 });
 
@@ -123,7 +124,6 @@ $("#emergency").on("click", function () {
   let item = $(".list-group-item-danger").text();
   $("#Waitting_list").empty();
   showWL(moveToTop(item));
-  select();
 });
 
 

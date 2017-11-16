@@ -1,0 +1,20 @@
+.headline-styling {
+  padding: 30px;
+  background-color: #CCC;
+  border: 1px solid #000;
+}
+header {
+  background-color: #ddd;
+}
+header h2 {
+  color: #007200;
+  padding: 30px;
+  background-color: #CCC;
+  border: 1px solid #000;
+}
+main {
+  background-color: #007200;
+}
+main h3 {
+  color: #229422;
+}
